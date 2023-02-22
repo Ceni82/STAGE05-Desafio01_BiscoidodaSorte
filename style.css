@@ -1,0 +1,180 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+.hide{
+    display:none; 
+    
+}
+
+body{
+    
+    font-size:1.6rem;
+    display:grid;
+    place-items: center;
+    height: 100vh;
+
+
+}
+
+
+/* criar uma animação com keyframes que altera o gradiente das cores*/
+ #background {
+    background: linear-gradient(250deg,#BB00FF 50%, #190361 100% );
+    background-size: 400% 400%;
+
+    -webkit-animation: fluctuation 8s ease infinite;
+    animation: fluctuation 18s ease infinite;
+}
+
+@-webkit-keyframes fluctuation {
+    0%{background-position:18% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:10% 86%}
+}
+@keyframes fluctuation{
+    0%{background-position:7% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:20% 86%}
+}
+
+
+/*MAIN*/
+main{
+    border-radius: .5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2.1rem 5.1rem 0 rgba(0, 0, 0, 0.8);
+    width:min(42.8rem, 90%);
+    margin-top:-12rem;
+    text-align: center;
+    padding:4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+button {
+    border: none;
+    background: none;
+    padding-top:2rem;
+}
+
+/* SCREEN 1*/
+main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: Bold;
+    font-size: 2.4rem;
+    color :#34355B;
+    font-weight: 700;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+
+
+}
+ main p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    padding-top: 1.4rem;
+
+
+ }
+
+
+.screen1 button:hover{
+    animation: tremer .4s;
+    animation-iteration-count: 4;
+    cursor: pointer;
+}
+
+
+
+@keyframes tremer {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
+
+
+/* SCREEN 2*/
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+    padding-bottom: 1.7rem;
+
+}
+
+#msg{
+    width: 29.3rem;
+    height: 10.7rem;
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+     padding:1.0rem;
+
+}
+
+#msg p{
+    font-family: 'Dancing Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9re,;
+    text-align: center;
+
+    color: #000000;
+
+   
+}
+
+#msg {
+    position: relative;
+    animation-name: textUp;
+    animation-duration: 1s;  
+    animation-fill-mode:inherit;
+  }
+  
+  @keyframes textUp {
+    from {top: 200px; opacity: 0}
+    to {top: 0px; }
+  }
+
+
+  
+
+.screen2 img {
+    padding-top:1.7rem;
+}
+
+.screen2 button {
+    padding: 1.6rem;
+    gap: 1rem;
+    width: 17.4rem;
+    height: 5.2rem;
+
+    background: #FF9500;
+    border-radius: .4rem;
+
+    color:white;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+}
+
+.screen2 button:hover{
+    
+    background: #ffaa34;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+}
